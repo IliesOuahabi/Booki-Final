@@ -68,7 +68,7 @@ a {
 
 .hebergements img {
     width: 100%;
-    height: 57%;
+    height: 55%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -116,10 +116,9 @@ margin-left: 2%;
 }
 
 .hebergements .card-content {
-    width: 90%;
-    padding-left: 15px;
-    display: flex
-;
+    width: 100%;
+    padding-left: 5px;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
@@ -130,6 +129,14 @@ margin-left: 2%;
     margin-bottom: 4px;
 }
 
+.card-rating {
+    margin-left: 5px;
+}
+
+.card-txt {
+    margin-left: 5px;
+    padding: 0;
+}
 .hebergements .card-subtitle {
     margin: 0;
 }
@@ -187,6 +194,97 @@ margin-left: 2%;
 }
 
 
+/****** activités à marseille ****/
+
+.actiCards {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 400px;
+    background-color: #f1f0f0;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 20px;
+    border-bottom : 2px solid rgba(177, 172, 172, 0.185);
+    cursor: pointer;
+}
+.actiCardImg {
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+.activitesMarseille {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 600px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.15));
+}
+
+#actiCard1:hover {
+    transform: scale(1.10);
+}
+
+#actiCard2:hover {
+    transform: scale(1.10);
+}
+
+#actiCard3:hover {
+    transform: scale(1.10);
+}
+
+#actiCard4:hover {
+    transform: scale(1.10);
+}
+
+.texte2 {
+height: 80px;
+}
+
+.text2 h3 {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 0;
+    height: 100%;
+
+}
+
+.h2ActiMars {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    margin-left: 20px;
+}
+
+.actMar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    width: 100%;
+    height: 800px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 10px;
+}
+
+
+.aPropos2 {
+    margin-left: 230px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

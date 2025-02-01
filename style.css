@@ -32,10 +32,9 @@ header {
 .he1 {
     display: flex;
     justify-content: center;
-    margin-right: 10px;
+    margin-right: 15px;
     border: solid rgba(177, 177, 177, 0.575);
     height: 2cap;
-    width: 8%;
     font-size: small;
     padding-top: 10px;
     border-bottom: transparent;
@@ -49,9 +48,9 @@ header {
     border: solid rgba(177, 177, 177, 0.575);
     font-size: small;
     display: flex;
+    width: 8%;
     justify-content: center;
     height: 2cap;
-    width: 5%;
     padding-top: 10px;
     border-top: 2px solid white;
     border-bottom: transparent;
@@ -77,6 +76,7 @@ body {
     justify-content: center;
     margin-top: 0;
     padding-top: 0;
+    margin-bottom: 0;
 }
 
 .main-container {
@@ -387,18 +387,26 @@ margin-left: 2%;
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 400px;
-    background-color: #f1f0f0;
-    margin-top: 30px;
+    height: 420px;
+    background-color: #ffffff;
     margin-left: 0px;
     margin-right: 0px;
     border-radius: 20px;
     border-bottom : 2px solid rgba(177, 172, 172, 0.185);
     cursor: pointer;
 }
+
+.actiCards h3 {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
 .actiCardImg {
     width: 100%;
-    height: 80%;
+    height: 90%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
@@ -408,9 +416,8 @@ margin-left: 2%;
 .activitesMarseille {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    height: 400px;
-    margin-top: 0px;
+    height: 500px;
+    margin-top: 30px;
     margin-left: 0px;
     padding-left: 0px;
     margin-right: 0px;
@@ -434,17 +441,19 @@ margin-left: 2%;
     transform: scale(1.10);
 }
 
-.texte2 {
-height: 80px;
+.text2 {
+display: flex;
+align-items: center;
+height: 60px;
 }
 
 .text2 h3 {
     padding-left: 20px;
     display: flex;
     align-items: center;
-    padding-top: 10px;
     margin-top: 0;
-    height: 100%;
+    height: 60px;
+    font-size: large;
 
 }
 
@@ -463,9 +472,9 @@ height: 80px;
     padding: 0px;
     width: 98%;
     height: 600px;
-    margin-top: 0px;
+    margin-top: 50px;
     padding-top: 0px;
-    padding-left: 25px;
+    padding-left: 15px;
     padding-bottom: 50px;
 }
 
@@ -499,6 +508,25 @@ li {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .btnH3 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 7px;
+        height: 10px;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .info {
+        margin-left: 2px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -510,12 +538,15 @@ li {
     .populaires {
         width: 100%;
         margin-top: 50px;
+        height: 250px;
     }
 
     .populaires-cards {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 100px;
     }
 
     .populaires-cards a {
@@ -529,6 +560,60 @@ li {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .hebergements2 {
+        width: 100%;
+    }
+
+    .populaires-title {
+    margin-left: 20px;
+    width: 95%;
+    }
+
+    .card {
+        width: 98%;
+        margin: 0px;
+    }
+
+    .actiCardImg {
+        height: 90%;
+    }
+
+    .actiCards {
+        height: 250px;
+        width: 85%;
+    }
+
+    .actiCardImg {
+        height: 90%;
+    }
+
+    .activitesMarseille {
+        height: 300px;
+        padding-left: 10px;
+    }
+
+    .actMar {
+        height: 400px;
+        padding-bottom: 0;
+        margin-top: 30px;
+    }
+
+    .text2 {
+        height: 20px;
+    }
+
+    .actiCards .text2 {
+        height: 65px;
+    }
+
+    .text2 h3 {
+        height: 55px;
+        font-size: 90%;
+        padding-left: 15PX;
+    }
+
+
 }
 
 /* Small devices (phones, less than 768px) */

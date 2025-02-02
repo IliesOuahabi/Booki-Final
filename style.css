@@ -48,7 +48,6 @@ header {
     border: solid rgba(177, 177, 177, 0.575);
     font-size: small;
     display: flex;
-    width: 8%;
     justify-content: center;
     height: 2cap;
     padding-top: 10px;
@@ -152,6 +151,11 @@ input[type="text"] {
     border: 1px solid #F2F2F2;
 }
 
+input::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+
 .searchBar2 input {
     border: none;
     width: 0;
@@ -172,6 +176,10 @@ input[type="text"] {
 .searchBar3 h3 {
     font-size: 13.5px;
     color: white;
+}
+
+.loupe {
+    display: none;
 }
 
 .btn button {
@@ -509,6 +517,10 @@ li {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+    .loupe {
+        display: none;
+    }    
+
     .btnH3 {
         display: flex;
         flex-direction: column;
@@ -613,10 +625,247 @@ li {
         padding-left: 15PX;
     }
 
-
+    input::placeholder {
+        color: rgb(0, 0, 0);
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+
+    .main-container {
+        padding: 0px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+
+    .header {
+        display: flex;
+        gap: 2px;
+        order: 2;
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        
+
+    }
+
+    .logo {
+        order: 1;
+        width: 300px;
+        height: 40px;
+        padding-bottom: 30px;
+        padding-top: 50px;
+        padding-left: 40px;
+    }
+    
+
+    .he1 {
+        width: 50%;
+        padding-bottom: 10px;
+        margin-right: 2px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        display: flex;
+        font-size: 18px;
+        margin-left: 10px;
+        border: solid #F2F2F2;
+        height: 2cap;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        
+
+    }
+    .he2 {
+        width:50%;
+        font-size: 18px;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 2px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        border: solid #F2F2F2;
+        height: 2cap;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+    }
+
+
+    .he1:hover {
+        border-top: transparent;
+        color: black;
+        border-bottom: solid #F2F2F2;
+    }
+
+    .he2:hover {
+        border-top: transparent;
+        color: black;
+        border-bottom: solid #F2F2F2;
+    }
+
+    .he1:active {
+        border-color: #0065FC;
+        color: #0065FC;
+    }
+    
+
+    .he2:active {
+        border-color: #0065FC;
+        color: #0065FC;
+    }
+
+    #actiCard1:hover {
+    transform: none;
+    }
+
+    #actiCard2:hover {
+    transform: none;
+    }
+
+    #actiCard3:hover {
+    transform: none;
+    }
+
+    #actiCard4:hover {
+    transform: none;
+    }
+
+    .top * {
+        padding-left: 10px;
+    }
+
+    .text1 h1 {
+        margin-top: 0;
+        width: 90%;
+        font-size: 28px;
+    }
+
+    .text1 h2 {
+        margin-top: 0;
+        width: 90%;
+        font-size: 20.5px;
+        padding-top: 10px;
+        font-weight: 300;
+    }
+
+    .searchBar {
+        padding-top: 15px;
+        width: 95%;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .searchBar * {
+        padding: 0px;
+    }
+
+    .searchBar1 {
+        display: flex;
+        height: 60px;
+        width: 15%;
+        margin-left: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .pin {
+        font-size: 23px;
+    }
+
+    .searchBar2 {
+        display: flex;
+        width: 63%;
+        height: 34px;
+    }
+
+    input::placeholder {
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        margin-left: 10px;
+      }
+
+      input[type="text"] {
+        font-size: 20px;
+    }
+
+    .searchBar3 {
+        display: flex;
+        width: 16%;
+        height: 65px;
+        margin-top: -2px;
+        border-radius: 22px;
+        margin-left: -32px;
+        filter: drop-shadow(0px 3px rgba(0, 0, 0, 0.10));
+    }
+
+    .loupe {
+        display: block;
+        font-size: 20px;
+    }
+
+    .searchBar3 h3 {
+        display: none;
+    } 
+
+    .btnH3 {
+      font-size: 20px;
+      height: 25px;
+    }
+
+    .btn2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 100%;
+        padding-left: 0; 
+    }
+
+
+    .btn button {
+        height: 50px;
+        margin: 0;
+        margin-bottom: 15px;
+        margin-right: 10px;
+        border-radius: 30px;
+    }
+    
+    .info {
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 40px;
+    }
+
+    .infoLoge {
+        padding-left: 5px;
+    }
+
+    .plus500 {
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .i {
+        font-size: 25px;
+    }
+
+    .info h4 {
+        font-size: 20px;
+        width: 90%;
+        padding-left: 2px;
+    }
 }

@@ -346,10 +346,11 @@ margin-left: 2%;
 
 .hebergements .card-title {
     margin-top: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
 .card-rating {
+    margin-top: 3px;
     margin-left: 5px;
 }
 
